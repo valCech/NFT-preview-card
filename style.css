@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --very-very-very-dark-blue: hsl(217, 54%, 11%);
+  --very-very-dark-blue: hsl(216, 50%, 16%);
+  --very-dark-blue: hsl(215, 32%, 27%);
+  --soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+}
+.attribution { font-size: 11px; text-align: center; margin-top: -100px;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+  background-color: var(--very-very-very-dark-blue);
+  font-family: 'Outfit', sans-serif;
+  color: white;
+  font-size: 18px;
+}
+h2{
+  margin-bottom: 20px;
+}
+h2:hover{
+  color: var(--Cyan);
+  cursor: pointer;
+}
+p{
+  color: var(--soft-blue);
+  display: inline-block;
+  margin-bottom: 20px;
+}
+hr{
+  height: 1px;
+  background-color: var(--very-dark-blue);
+  border: none;
+  opacity: 0.7;
+  margin-bottom: 15px;
+}
+.container{
+  background-color: var(--very-very-dark-blue);
+  max-width: 350px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  margin: 200px auto;
+}
+.container ul{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  margin-bottom: 15px;
+}
+.container ul li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container ul li img{
+margin-right: 6px;
+padding-bottom: -5px;
+}
+.time{
+  color: var(--soft-blue);
+}
+.cost{
+  color: var(--Cyan);
+}
+.eth{
+  position: relative;
+}
+.eth img{
+  max-width:100%;
+  max-height:100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.eth .cyan-bg{
+  position: absolute;
+  top: 0;
+  border-radius: 8px;
+  background-color: hsl(178, 100%, 50%,55%);
+  width: 100%;
+  height: calc(100% - 26px);
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+.eth .cyan-bg:hover{
+opacity: 1;
+}
+.eth .cyan-bg img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.avatar{
+  width: 25px;
+  margin-right: 10px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.info{
+  margin-bottom: -10px;
+  display: flex;
+  align-items:flex-start;
+}
+.name{
+  color: white;
+}
+.name:hover{
+  color: var(--Cyan);
+  cursor: pointer;
+}
